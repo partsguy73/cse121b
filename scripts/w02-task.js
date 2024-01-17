@@ -22,7 +22,11 @@ imageElement.setAttribute('alt', `This is ${fullName}. A student at BYU-Idaho.`)
 /* Step 5 - Array */
 let favoriteFood = ['Steak', 'Barbeque', 'Taco', 'Nachos', 'Mint-Chocolate Chip Ice Cream'];
 //document.getElementById('food').innerHTML = favoriteFood
-foodElement.innerHTML = favoriteFood.join(', ');
+foodElement.innerHTML = favoriteFood;
 let newFood = 'Burgers';
 favoriteFood.push(newFood);
-foodElement.innerHTML += `<br>${favoriteFood.join(', ')}`;
+foodElement.innerHTML += `<br>${favoriteFood}`;
+favoriteFood.shift();
+foodElement.innerHTML += `<br>${favoriteFood}`;
+favoriteFood.pop();   
+foodElement.innerHTML += `<br>${favoriteFood}`;
