@@ -17,7 +17,7 @@ const imageElement = document.querySelector('img');
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture); 
-imageElement.setAttribute('alt', `This is ${fullName}. A student at BYU-Idaho.`);
+imageElement.setAttribute('alt', `Profile image of ${fullName}.`);
 
 /* Step 5 - Array */
 let favoriteFood = ['Steak', 'Barbeque', 'Taco', 'Nachos', 'Mint-Chocolate Chip Ice Cream'];
