@@ -4,9 +4,7 @@ let templeList = [];
 
 /* async displayTemples Function */
 const displayTemples = (temples) => {
-    console.log("Displaying temples:", temples);
-    templeList.forEach(temple => {
-        console.log("Displaying Temple", temple);
+    temples.forEach(temple => {
         // Create <article> element
         const articleElement = document.createElement("article");
 
